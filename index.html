@@ -11,7 +11,106 @@
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/"><img src="images/logo.svg" alt="Logo"></a>
+      <nav class="site-navigation">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/portfolio.pdf">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1><span class="hl">Hello &ndash; I'm Aman Thakur</span>, a Frontend Developer building modern and beautiful web apps</h1>
+        <p>I like working with new technologies and using them to solve real-life problems. My skills include HTML, CSS, JS, React, and WordPress. If you're looking for a developer who is passionate, fun-loving, and fast learner, I'm the guy you need.</p>
+      </div>
+    </section>
+    <section id="work" class="work">
+      <div class="container">
+        <h2>Some of My Best Work</h2>
+        <div class="work-item">
+          <img src="images/beer-shop.png" alt="item" />
+          <div class="text">
+            <h3>Similar Color Palette</h3>
+            <p>This app generates a palette based on the colors you provide. This is done by keeping saturation and luminiosity constant, and getting random hue values.</p>
+            <ul>
+              <li>The app has been made by using Create React App</li>
+              <li>It uses React Context API to manage state changes</li>
+              <li>I've also used React Animation in this project.</li>
+            </ul>
+            <a class="btn" href="https://vigilant-shannon-7620c9.netlify.com/">View App</a>
+          </div>
+        </div>
+        <div class="work-item">
+          <video>
+            <source src="images/theme.mp4" type="video/mp4" />
+          </video>
+          <div class="text">
+            <h3>Food Blogger WordPress Theme</h3>
+            <p>I made this WordPress theme for food bloggers with custom front page and landing page templates. And here's the technical details about the theme:</p>
+            <ul>
+              <li>The theme is based on Underscores starter theme.</li>
+              <li>It has custom front page and landing pages.</li>
+              <li>I've used Sass and Gulp to develop the theme.</li>
+            </ul>
+            <a class="btn" href="https://beer-shop.netlify.com/">GitHub</a>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="images/color-palette.png" alt="item" />
+          <div class="text">
+            <h3>Favourite Beer App</h3>
+            <p>This is a very simple React app which pulls the beer data from punk beer API, you can then pick your favourite ones and view additional information about the beer. Here's some technical details about the app:</p>
+            <ul>
+              <li>It is been built using Create React App.</li>
+              <li>It uses React Router to manage routing.</li>
+              <li>It uses Axios to fetch items from the API.</li>
+            </ul>
+            <a class="btn" href="https://beer-shop.netlify.com/">View App</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="intro">
+          <h2>Passionate about <span class="hl">Reactjs and beautiful design.</span><br>Advocate of <span class="hl">accessible apps.</span><br>Likes <span class="hl">running and watching cricket.</span></h2>
+          <p>I am a web developer who loves building beautiful and accessible interfaces. I use Reactjs for majority of my work and highly recommend it because of its declarative nature.</p>
+          <p>I initially started my career as a marketer and then switched to developer when exposed to programming. Because of my initial career, I am also very keen to develop apps that are conversion-friendly, fast and rank well in search engines.</p>
+          <p>I care deeply about the apps being accessible part of the reason is because I am also disabled. I also like to make apps that are scalable and easily maintainable which is why I frequently make changes to my workflow. For example, I recently started using ITCSS(Inverted Triangle CSS) to make CSS scalable.</p>
+          <a href="mailto:designedbyaman@gmail.com" class="button" id="contact">Say hello</a>
+        </div>
+        <img class="aman" src="images/aman.png" alt="Aman Thakur">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="social-links">Follow me on <a href="https://github.com/madebyaman">GitHub</a> and <a href="https://twitter.com/imamanthakur">Twitter</a></p>
+  </footer>
 
+  <script>
+    {
+      const video = document.querySelector('video');
+      video.addEventListener('mouseenter', () => {
+        if (video.paused) {
+          video.currentTime = 0;
+          video.play();
+        }
+      });
+      video.addEventListener('mouseleave', () => {
+        if (!video.paused) {
+          video.currentTime = 0;
+          video.pause();
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

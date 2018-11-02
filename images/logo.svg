@@ -1,0 +1,10 @@
+<svg width="150px" height="150px" viewBox="0 0 300 300" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#333333" stroke-width="10" x="5" y="5" width="290" height="290"></rect>
+        <text id="A" font-family="Roboto-Regular, Roboto" font-size="142" font-weight="normal" letter-spacing="-4.4375" fill="#333333">
+            <tspan x="106" y="199">A</tspan>
+        </text>
+    </g>
+</svg>
